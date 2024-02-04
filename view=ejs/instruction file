@@ -1,0 +1,66 @@
+ADD your MongoDb URL in confurigation.js file
+
+POST METHOD:
+http://localhost:3000/api/newUserRegister
+
+{
+    "name": "Jegan",
+        "emailId" : "jegan@gmail.com",
+            "phoneNumber": "9080123456",
+                "password" : "Jegan@123",
+                    "role": "Mern Stack Developer"
+
+}
+
+http://localhost:3000/api/personalDetails
+
+{
+    "emailId": "jegan@gmail.com",
+
+        "fatherName" : "Micheal Raj",
+            "motherName": "Jenitha Mary",
+                "street" : "ellis nagar",
+                    "area": "Gandhiji Colony",
+                        "city": "Madurai",
+                            "state" : "Tamil Nadu",
+                                "country": "India",
+                                    "pincode" : "625016",
+                                        "educationDetails": [
+                                            {
+                                                "qualification": "MBA",
+                                                "since": "01/06/2017",
+                                                "to": "01/06/2019",
+                                                "percentage": 56,
+                                                "completed": true
+                                            }
+
+
+                                        ]
+
+}
+
+http://localhost:3000/api/loginAccess
+{
+    "emailId": "jegan141523@gmail.com",
+        "password" : "Jegan@123"
+}
+
+GET METHOD
+http://localhost:3000/api/user/:userId
+http://localhost:3000/api/getAllUserDetails
+
+PUT METHOD
+http://localhost:3000/api/user/:userId  for Ex : (userId : 69e9)
+
+{
+    "name": "Jegan Raj",
+        "emailId" : "jegan141523@gmail.com",
+            "phoneNumber": "9080123456",
+                "password" : "Jegan@123",
+                    "role": "Mern Stack Developer"
+
+}
+
+
+DELETE METHOD
+http://localhost:3000/api/user/:userID  for Ex : (69e9)
